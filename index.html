@@ -17,27 +17,28 @@
 		</div>
 	</header>
 	
-	<fieldset name="login_info">
 	<section class="signup">
-	<form class="login_form" action="" method="post">
+	<form class="login_form" action="/some-server-endpoint" method="post">
+	<fieldset name="login_info">
 		<h1>Sign Up</h1>
-		<label for="email">Email</label>
-			<input placeholder="foo@bar.com" type="email" name="email" id="email" />
-		
-		<label for="password">Password</label>
-			<input placeholder="1234passw0rd" type="password" name="password" />
 
-	<section class="button">
-		<button type="signup" class="signup_button">Sign Up</button>
-		<p>Forgot password?</p>
+		<label for="email" required>Email</label>
+			<input placeholder="foo@bar.com" type="email" name="email" id="email" required/>
+		
+		<label for="password" required>Password</label>
+			<input placeholder="1234passw0rd" type="password" name="password" required/>
+	
+	<section>
+		<button type="signup" class="signup_button"><a href="/signup/">Sign Up</a></button>
+		<a href="/forgot-password/new">Forgot password?</a>
 	</section>
 
 	</fieldset>
-	</section>
 	</form>
-	
+	</section>
+		
 	<section>
-		<p>Already have an account? Log In</p>
+		<p>Already have an account? <a href="/login">Log in</a></p>
 	</section>
 
 </body>
