@@ -3,6 +3,7 @@
 <head>
 	<title>AnalogSea</title>
 	<link rel="stylesheet" type="text/css" href="main.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
 	<meta charset="utf-8" name="description" content="analogsea">
 
@@ -13,32 +14,33 @@
 
 	<header>
 		<div class="logo_image">
-			<img src="images/logo.png">
+			<img src="images/logo.png" alt="analogsea_logo">
 		</div>
 	</header>
 	
-	<fieldset name="login_info">
 	<section class="signup">
-	<form class="login_form" action="" method="post">
-		<h1>Sign Up</h1>
-		<label for="email">Email</label>
-			<input placeholder="foo@bar.com" type="email" name="email" id="email" />
-		
-		<label for="password">Password</label>
-			<input placeholder="1234passw0rd" type="password" name="password" />
+	<form class="login_form" action="/some-server-endpoint" method="post">
+	<fieldset name="login_info">
+		<legend class="sign_up">Sign Up</legend>
 
-	<section class="button">
-		<button type="signup" class="signup_button">Sign Up</button>
-		<p>Forgot password?</p>
+		<label class="email" for="email" required>Email</label>
+			<input placeholder="foo@bar.com" type="email" name="email" id="email" required/>
+		
+		<label class="password" for="password" required>Password</label>
+			<input placeholder="1234passw0rd" type="password" name="password" required/>
+	
+	<section>
+		<button type="signup" class="signup_button"><a class="one" href="/signup/">Sign Up</a></button>
+		<a class="two" href="/forgot-password/new">Forgot password?</a>
 	</section>
 
 	</fieldset>
-	</section>
 	</form>
-	
-	<section>
-		<p>Already have an account? Log In</p>
 	</section>
+		
+	<footer class="login">
+		<p><strong>Already have an account? <a class="three" href="/login">Log in</a></strong></p>
+	</footer>
 
 </body>
 </html>
