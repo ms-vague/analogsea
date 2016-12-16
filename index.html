@@ -3,6 +3,7 @@
 <head>
 	<title>AnalogSea</title>
 	<link rel="stylesheet" type="text/css" href="main.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
 	<meta charset="utf-8" name="description" content="analogsea">
 
@@ -19,26 +20,26 @@
 	
 	<section class="signup">
 	<form class="login_form" action="/some-server-endpoint" method="post">
-	<fieldset name="login_info">
-		<h1>Sign Up</h1>
 
-		<label for="email" required>Email</label>
+		<legend class="sign_up">Sign Up</legend>
+
+		<label class="email" for="email" required>Email</label>
 			<input placeholder="foo@bar.com" type="email" name="email" id="email" required/>
 		
-		<label for="password" required>Password</label>
-			<input placeholder="1234passw0rd" type="password" name="password" required/>
+		<label class="password" for="password" required>Password</label>
+			<input placeholder="1234passw0rd" type="password" name="password" id="password" required/>
 	
 	<section>
-		<button type="signup" class="signup_button"><a href="/signup/">Sign Up</a></button>
-		<a href="/forgot-password/new">Forgot password?</a>
+		<button type="signup" class="signup_button"><a class="one" href="/signup/">Sign Up</a></button>
+		<a class="two" href="/forgot-password/new">Forgot password?</a>
 	</section>
 
-	</fieldset>
+
 	</form>
 	</section>
 		
 	<section>
-		<p>Already have an account? <a href="/login">Log in</a></p>
+		<p>Already have an account? <a class="three" href="/login">Log in</a></p>
 	</section>
 
 </body>
